@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		let piatti = [
+            {
+                nome: "Parmigiana di melenzane",
+                foto: "https://....",
+                descrizione: "Sei una parmigiana",
+                valore: 50
+            },
+            {
+                nome: "Popizze",
+                foto: "https://....",
+                descrizione: "Sei una bella popizza",
+                valore: 30
+            },
+            {
+                nome: "Sgagliozze",
+                foto: "https://....",
+                descrizione: "Sei proprio una sgagliozza",
+                valore: 20
+            }
+
+        ];
+        let questions = [
+            {
+                question: "Che colore ti piace?",
+                answers: [
+                    {
+                        "text": "Rosso",
+                        "value": 10
+                    },
+                    {
+                        "text": "Blu",
+                        "value": 0
+                    },
+                    {
+                        "text": "Giallo",
+                        "value": -10
+                    }
+                ]
+            },
+            {
+                question: "Che ne pensi delle cozze?",
+                answers: [
+                    {
+                        "text": "Meglio cotte",
+                        "value": -10
+                    },
+                    {
+                        "text": "Troppo cozzale",
+                        "value": 5
+                    },
+                    {
+                        "text": "La colazione del campione",
+                        "value": 20
+                    }
+                ]
+            }
+
+        ]
+    
+        function showQuestions(){
+
+        }
+	</script>
+	<style type="text/css">
+		*{
+			background-color: blueviolet;
+
+		}
+		.questionario
+		{
+          float: right;
+          max-width: 30% 
+          
+		}
+		.domanda{
+			color: black;
+			
+
+		}
+		.domanda1
+		{
+         color: white;
+         font-weight: bold;
+
+		}
+		.domanda2{
+			color: white;
+			font-weight: bold;
+
+		}
+		.domanda3{
+			color: white;
+			font-weight: bold;
+
+		}
+		.domanda4{
+			color: white;
+			font-weight: bold;
+
+		}
+		.questionario2{
+			width: 30%;
+			height: 30%;
+			float: right;
+			flex-direction: row;
+		}
+		.cibo{
+			max-width: 30%;
+			max-height: 30%;
+			width: 10%;
+			height: 10%;
+		}
+	</style>
+</head>
+<body>
+
+<h1 class="domanda">Che piatto sei?</h1>
+
+    <form>
+        <div class="question">
+            <p class="domanda1">Che ne pensi delle cozze?</p>
+
+            <div class="answers">
+                <div class="answer">
+                    <input id="answer-1" type="radio" name="question-1" value="-10" />
+                    <label for="answer-1">
+                        Meglio cotte
+                    </label>
+                </div>
+                <div class="answer">
+                    <input id="answer-2" type="radio" name="question-1" value="5" />
+                    <label for="answer-2">
+                        Troppo cozzale
+                    </label>
+                </div>
+                <div class="answer">
+                    <input id="answer-3" type="radio" name="question-1" value="20" />
+                    <label for="answer-3">
+                        La colazione del campione
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="question2">
+            <p class="domanda2">Ti piace il sugo?</p>
+
+            <div class="answers2">
+                <div class="answer2">
+                    <input id="answer-1" type="radio" name="question-2" value="-15" />
+                    <label for="answer-1">
+                        troppo sugato
+                    </label>
+                </div>
+                <div class="answer2">
+                    <input id="answer-2" type="radio" name="question-2" value="0" />
+                    <label for="answer-2">
+                        si ma non speziato
+                    </label>
+                </div>
+                <div class="answer2">
+                    <input id="answer-3" type="radio" name="question-2" value="5" />
+                    <label for="answer-3">
+                        Lo adoro
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="question">
+            <p class="domanda3">Che ne pensi della frittura?</p>
+
+            <div class="answers3">
+                <div class="answer">
+                    <input id="answer-1" type="radio" name="question-1" value="10" />
+                    <label for="answer-1">
+                        Preferisco rimanere fit
+                    </label>
+                </div>
+                <div class="answer3">
+                    <input id="answer-2" type="radio" name="question-1" value="-15" />
+                    <label for="answer-2">
+                        Troppo barese
+                    </label>
+                </div>
+                <div class="answer3">
+                    <input id="answer-3" type="radio" name="question-1" value="25" />
+                    <label for="answer-3">
+                        La mangio a colazione, pranzo e cena
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="question">
+            <p class="domanda4">Ti piacciono le melenzane?</p>
+
+            <div class="answers4">
+                <div class="answer">
+                    <input id="answer-1" type="radio" name="question-1" value="-10" />
+                    <label for="answer-1">
+                        Meglio cotte
+                    </label>
+                </div>
+                <div class="answer4">
+                    <input id="answer-2" type="radio" name="question-1" value="5" />
+                    <label for="answer-2">
+                        Che schifo meglio evitarle
+                    </label>
+                </div>
+                <div class="answer4">
+                    <input id="answer-3" type="radio" name="question-1" value="20" />
+                    <label for="answer-3">
+                        Meglio tritate
+                    </label>
+                </div>
+            </div>
+        </div>
+    </form>
+    <img class="questionario" src="static/images/questionario.png">
+    <img class="questionario2"  src="static/images/questionario2.png">
+    <img class="cibo" src="static/images/mangiare.gif">
+</body>
+</html>
